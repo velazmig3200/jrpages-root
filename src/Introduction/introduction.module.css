@@ -1,0 +1,19 @@
+:root {
+	--IMG_5372-size: 13rem;
+}
+
+.imgCircleContainer {
+	position: relative;
+	overflow: hidden;
+	height: var(--IMG_5372-size);
+	width: var(--IMG_5372-size);
+	min-width: var(--IMG_5372-size);
+	min-height: var(--IMG_5372-size);
+	border-radius: var(--IMG_5372-size);
+}
+
+.IMG_5372 {
+	position: absolute;
+	height: 100%;
+	margin-left: calc(var(--IMG_5372-size) - 112%);
+}
