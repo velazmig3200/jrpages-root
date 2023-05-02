@@ -12,9 +12,7 @@ function index() {
 				style={{ marginTop: "2.2rem" }}>
 				Grow your business with a fully custom webpage
 			</h1>
-			<p className={`${headingCss.class1}`}>
-				My name is Miguel Velazquez Jr, but you can call me Jr.
-			</p>
+			<p className={`${headingCss.class1}`}>Hello, my name is Jr.</p>
 			<p className={`${headingCss.class1}`}>
 				I am a skilled web developer and designer looking to help small
 				businesses like yours!

@@ -7,6 +7,13 @@
 .class1 {
 	z-index: 2;
 	color: white;
+	text-shadow: 0 0 20px black;
+}
+h1.class1 {
+	font-size: 2.4rem;
+}
+p.class1 {
+	font-size: 1.5rem;
 }
 
 .bgImg {
@@ -14,14 +21,11 @@
 	height: 100%;
 	width: 100%;
 	z-index: 0;
+	opacity: 1;
 }
 
 .portraitBuffer {
 	min-height: var(--IMG_5372-size);
 	height: 13rem;
 	margin-bottom: var(--IMG_5372-bottom);
-	/*debug*/
-	/* background-color: red;
-	z-index: 2;
-	width: 0.4rem; */
 }

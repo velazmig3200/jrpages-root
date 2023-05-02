@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import navImgCss from "./navImg.module.css";
 import IMG_5372 from "./IMG_5372.jpg";
 
-function index({ navImgState }) {
+function index({ navImgState, setNavImgState }) {
 	const cssRoot = document.querySelector(":root");
 	const cssImgSize = v => cssRoot.style.setProperty("--IMG_5372-size", v);
 	const imgSizeMax = 208;
@@ -48,10 +48,10 @@ function index({ navImgState }) {
 			result.push(
 				<a
 					key={i}
-					className={`${navImgCss.dropdownItem} ${
-						navImgState && navImgCss.dropdownOff
-					}`}
-					style={{ ...topLeftValue[i] }}>
+					className={`${navImgCss.dropdownItem} 
+                    ${navImgState && navImgCss.dropdownOff}`}
+					style={{ ...topLeftValue[i] }}
+					onClick={() => setNavImgState(1)}>
 					{items[i]}
 				</a>
 			);
@@ -60,7 +60,12 @@ function index({ navImgState }) {
 	}
 
 	return (
-		<div className={`${navImgCss.mainContainer}`}>
+		<div
+			className={`${navImgCss.mainContainer}`}
+			onClick={() => {
+				clearInterval(navImgAnimationID);
+				setNavImgState(!navImgState);
+			}}>
 			<div className={`${navImgCss.imgCircleContainer}`}>
 				<img
 					className={`${navImgCss.IMG_5372}`}

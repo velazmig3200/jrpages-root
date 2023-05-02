@@ -19,7 +19,6 @@ function App() {
 			: setNavImgState(0);
 	}
 
-
 	return (
 		<main ref={mainRef} onWheel={getMainRef}>
 			{/* <div
@@ -36,7 +35,7 @@ function App() {
 			<Persuasion />
 			<Offers />
 
-			<NavImg navImgState={navImgState} />
+			<NavImg navImgState={navImgState} setNavImgState={setNavImgState} />
 		</main>
 	);
 }
