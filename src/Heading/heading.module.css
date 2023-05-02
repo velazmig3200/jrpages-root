@@ -18,7 +18,7 @@
 
 .portraitBuffer {
 	min-height: var(--IMG_5372-size);
-	height: var(--IMG_5372-size);
+	height: 13rem;
 	margin-bottom: var(--IMG_5372-bottom);
 	/*debug*/
 	/* background-color: red;

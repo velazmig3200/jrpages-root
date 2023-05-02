@@ -7,7 +7,9 @@ function index() {
 	return (
 		<div className={`${indexCss.container} ${headingCss.container}`}>
 			<img className={`${headingCss.bgImg}`} src={blurry_code_1} />
-			<h1 className={`${headingCss.class1}`}>
+			<h1
+				className={`${headingCss.class1}`}
+				style={{ marginTop: "2.2rem" }}>
 				Grow your business with a fully custom webpage
 			</h1>
 			<p className={`${headingCss.class1}`}>
