@@ -64,7 +64,7 @@ function index({ navImgState, setNavImgState }) {
 			className={`${navImgCss.mainContainer}`}
 			onClick={() => {
 				clearInterval(navImgAnimationID);
-				setNavImgState(!navImgState);
+				navImgState == 1 && setNavImgState(0);
 			}}>
 			<div className={`${navImgCss.imgCircleContainer}`}>
 				<img
@@ -73,7 +73,7 @@ function index({ navImgState, setNavImgState }) {
 					alt="self portrait"
 				/>
 			</div>
-			{dropdownItems(["Home", "About", "Services", "home", "about"])}
+			{dropdownItems(["Top", "About", "Services", "Pricing", "Contact"])}
 		</div>
 	);
 }

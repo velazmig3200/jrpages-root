@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Heading from "./Heading/index";
-import Introduction from "./Introduction/index";
+import About from "./About/index";
 import Persuasion from "./Persuasion/index";
 import Offers from "./Offers/index";
 import NavImg from "./NavImg/index";
@@ -31,7 +31,7 @@ function App() {
 					top: "0px"
 				}}></div> */}
 			<Heading />
-			<Introduction />
+			<About />
 			<Persuasion />
 			<Offers />
 
